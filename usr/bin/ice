@@ -247,9 +247,9 @@ def writefile(title, formatted, address, iconext, location):
         print(_("ERROR: An unknown browser selection error has occurred."))
         sys.exit(1)
 
-        address1 = str.replace(address, 'http://', '')
-        address2 = str.replace(address1, 'https://', '')
-        address3 = str.replace(address2, '/', '_')
+    address1 = str.replace(address, 'http://', '')
+    address2 = str.replace(address1, 'https://', '')
+    address3 = str.replace(address2, '/', '_')
 
     with open(appfile, 'w') as appfile1:
         appfile1.truncate()
